@@ -1,0 +1,126 @@
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#logo{
+    width: 160px;
+    height: 70px;
+}
+#fotoCV{
+    width: 90px;
+    height: 125px;
+}
+.flex0, .flex1, .flex2, .flex3, .flex4, .flex5, .flex6, .flex7, .flex8, .flex9, .flex10, .flex11,.flex13, .flex14{
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex0-1, .flex1-1, .flex2-1, .flex3-1, .flex4-1, .flex5-1, .flex6-1, .flex7-1, .flex8-1, .flex9-1, .flex10-1, .flex11-1, .flex12-1, .flex13-1, .flex14-1 {
+    width: 300px;
+    color:rgb(35, 35, 182);
+    flex-wrap: nowrap;
+    margin-left: 200px;
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: right;
+    justify-content: flex-end;
+    align-content:initial;
+    font-size: 20px;
+}
+.flex1-2, .flex2-2, .flex3-2, .flex4-2, .flex5-2, .flex6-2, .flex7-2, .flex8-2, .flex9-2, .flex10-2, .flex11-2, .flex12-2, .flex13-2, .flex14-2{
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: left;
+}
+.flex0-2{
+    margin-left: 50px;
+    width: 80%;
+}
+
+
+.flex0-3{
+    text-align: right;
+    width: 20%;
+    padding: 8px;
+}
+
+
+.flex0 > div > p{
+    color: rgb(0, 195, 255);
+    font-size: 20px;
+}
+
+
+hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 195, 255);
+
+
+}
+.flex4-2 > hr, .flex6-2 > hr, .flex9-2 > hr{
+    margin-top:5%;
+    width:100%;
+}
+#Position{
+    list-style-image: url('/Images/IconPosition.ico');
+}
+
+
+#Mobile{
+    list-style-image: url('/Images/IconMobile\ \(2\).ico');
+}
+
+
+#Mail{
+    list-style-image: url('/Images/IconMail.jpg');
+}
+
+
+#i{
+    color: rgb(0, 195, 255);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: left;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+#Table-Title{
+    color:rgb(35, 35, 182)
+}
+
+
+#a1{
+    border-left-color:white ;
+}
+
+
+#b1{
+    border-left-color:white ;
+    border-right-color: white;
+}
+
+
+#c1{
+    border-right-color: white;
+}
+#d1{
+    height: 15px;
+    background-color: rgb(212, 211, 211);
+}
+
+.flex12{
+    
+}

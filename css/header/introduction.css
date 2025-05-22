@@ -1,0 +1,365 @@
+/* -----------------introduction--------------- */
+.introduction {
+    height: 608px;
+}
+
+.intro_title h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.products {
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.products img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.describe {
+    text-align: center;
+    max-width: 361px;
+    margin: auto;
+}
+
+.content h4 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.content p {
+    font-size: 12px;
+    line-height: 100%;
+    font-family: Lexend Deca;
+    color: #B3120F;
+}
+
+.content p>strong {
+    font-size: 15px;
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.jane_img {
+    height: 270px;
+}
+
+.describe p {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.jane span {
+    font-family: Sofia Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    padding-left: 20px;
+}
+
+.addCartTitle {
+    text-transform: uppercase;
+    padding-left: 75px;
+}
+
+.buy {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 450px;
+    margin-top: 43px;
+}
+
+.walker {
+    display: flex;
+    width: 65%;
+}
+
+.walker img {
+    max-width: 100%;
+    height: 85%;
+}
+
+.buy_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy_logo img {
+    max-width: 20%;
+    padding: 15px 0px;
+}
+
+.buy_logo span {
+    font-family: Lexend Deca;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    color: #333333;
+    margin-top: 4px;
+}
+
+.detail h4 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.detail h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.7px;
+    vertical-align: middle;
+}
+
+.detail h5>strong {
+    text-decoration: underline;
+}
+
+.purple p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+}
+
+.purple p>strong {
+    font-weight: 700;
+}
+
+.paypal img {
+    max-width: 15%;
+    vertical-align: middle;
+}
+
+.paypal a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.blue_title {
+    margin-top: 15px;
+}
+
+.blue_title h3 {
+    font-family: Sofia Sans;
+    font-weight: 700;
+    font-size: 15px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #575757;
+}
+
+.blue_title h3>strong {
+    color: #000000;
+}
+
+.size {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size h4 {
+    font-family: Sofia Sans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #575757;
+}
+
+.size h4>strong {
+    color: #000000;
+}
+
+.size h5 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.addCart {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.cart button {
+    font-family: Sofis Sans;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.intro_shoes {
+    margin-top: 25px;
+}
+
+.intro_shoes img {
+    max-width: 17%;
+    cursor: pointer;
+}
+
+.intro_shoes img:last-child {
+    border-bottom: 1px solid black;
+}
+
+.chart {
+    display: flex;
+    gap: 15px;
+}
+
+.chart img {
+    padding: 5px 0px;
+}
+
+.buybtn {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 5px;
+    text-align: center;
+}
+
+.buybtn img {
+    max-width: 90%;
+    height: 70%;
+}
+
+.buybtn h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18.85px;
+    vertical-align: middle;
+    color: #666666;
+    margin-top: -26px;
+}
+
+.cart {
+    max-width: 425px;
+    margin: auto;
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart button {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.cart img {
+    max-width: 11%;
+}
+
+.detail_one {
+    margin-left: 35px;
+    padding-top: 110px;
+}
+
+.shoesdetail {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    max-width: 1220px;
+    margin: auto;
+}
+
+.big_shoes {
+    margin-left: 30px;
+}
+
+.big_shoes img {
+    max-width: 94%;
+    position: relative;
+}
+
+.detail_one img {
+    max-width: 33%;
+}
+
+.detail_one h2 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.detail_one h4 {
+    font-family: Lexend Deca;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.detail_one h4>strong {
+    text-transform: uppercase;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display: Flex, Block, and Grid</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    /* Block Example */
+    .block-section h2,
+    .block-section p {
+      display: block;
+      margin-bottom: 10px;
+      background: #e3f2fd;
+      padding: 10px;
+      border: 1px solid #90caf9;
+    }
+
+    /* Flex Example */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      background: #fce4ec;
+      padding: 10px;
+      border: 1px solid #f48fb1;
+    }
+
+    .flex-item {
+      flex: 1;
+      background: #f8bbd0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Grid Example */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #81c784;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      background: #a5d6a7;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Block Example -->
+  <section class="block-section">
+    <h2>Block Layout</h2>
+    <p>This is a block element. Each element takes full width.</p>
+    <p>Another block element with its own line.</p>
+  </section>
+
+  <!-- Flex Example -->
+  <section class="flex-section">
+    <h2>Flex Layout</h2>
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+  </section>
+
+  <!-- Grid Example -->
+  <section class="grid-section">
+    <h2>Grid Layout</h2>
+    <div class="grid-container">
+      <div class="grid-item">Grid 1</div>
+      <div class="grid-item">Grid 2</div>
+      <div class="grid-item">Grid 3</div>
+      <div class="grid-item">Grid 4</div>
+      <div class="grid-item">Grid 5</div>
+      <div class="grid-item">Grid 6</div>
+    </div>
+  </section>
+
+</body>
+</html>

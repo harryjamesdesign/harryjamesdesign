@@ -1,0 +1,157 @@
+/* -----------------discover-------------------------- */
+.imgs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 1340px;
+    margin: auto;
+    gap: 10px;
+    margin-top: 97px;
+}
+
+.discover_title {
+    max-width: 1340px;
+    margin: auto;
+    text-align: center;
+    margin-top: 72px;
+}
+
+.discover_title h4 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.comfort {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.comfort h2 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 17px;
+}
+
+.comfort h4 {
+    margin-top: 18px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.last {
+    margin-top: 65px;
+}
+
+.service {
+    color: #000000;
+}
+
+.service h2 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-family: Lexend Deca;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28.28px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+}
+
+.service h3 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.service span {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.7px;
+    vertical-align: middle;
+}
+
+.service button {
+    width: 270px;
+    height: 44.8px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #204A34;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.lastest {
+    padding: 64px 110px;
+    margin-top: 50px;
+}
+
+.lastone {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.service blockquote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+}
+
+.service blockquote>strong {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.last_one {
+    padding: 10px;
+}
+
+.facebook {
+    margin-top: 30px;
+}
+
+.lasttwo{
+    text-align: center;
+}
+
+.lasttwo img{
+    margin-left: 5px;
+}

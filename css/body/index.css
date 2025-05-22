@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(../../font/Lexend-VariableFont_wght.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url(../../font/SofiaSansCondensed-VariableFont_wght.ttf) format('woff2');
+}
+
+/* --------------------------header------------------------ */
+
+.top_header {
+    background-color: #000000;
+    height: 25px;
+    color: #FAFAFA;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.main_header {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu_bar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    gap: 35px;
+}
+
+.menu_bar h4 {
+    margin-left: 10px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19.5px;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.logo img {
+    max-width: 300px;
+}
+
+.logo_img {
+    width: 300px;
+}
+
+.icon_bar {
+    padding-left: 30px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.last {
+    display: none;
+}
+
+.res {
+    display: none;
+    width: 462px;
+    height: 192px;
+}
+
+/* ----------------------body------------------------------ */
+
+/* -------------------------slider one---------------------- */
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    display: none;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+    background-color: #FFFFFF;
+    height: 20px;
+    width: 56px;
+    border-radius: 28px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: unset;
+    bottom: 20px;
+    right: 65px;
+}
+
+.swiper-button-next {
+    right: 100px;
+}
+
+.swiper-button-prev {
+    left: 87vw;
+}
+
+.shopbtn {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    margin-top: -17vh;
+    z-index: 2;
+    margin-left: 66vw;
+    gap: 30px;
+    right: 197px;
+}
+
+.shopbtn button {
+    width: 152.64px;
+    background-color: transparent;
+    border: none;
+}
+
+.shopbtn img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.shopbtn a {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+#slide {
+    cursor: pointer;
+}
+
+
+.bannerin {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 18px;
+}
+
+.bannerin h3 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.go_shop {
+    max-width: 1340px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 468.3px;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.go_shop img {
+    width: 100%;
+}
+
+.links {
+    height: 96px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    max-width: 670px;
+    margin-top: -104px;
+    text-align: center;
+    align-items: center;
+    padding: 28px;
+}
+
+.links h3 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.img img {
+    width: 60%;
+    cursor: pointer;
+}
+
+.img_two img {
+    width: 59.8%;
+    cursor: pointer;
+}
+
+
+/* ----------------------slider two---------------------- */
+.shoes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 1340px;
+    margin: auto;
+}
+
+.slideTwo {
+    height: 540px;
+    background-color: #FAFAFA;
+}
+
+.title {
+    max-width: 1340px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+
+.title h2 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.second_slide {
+    max-width: 335px;
+    height: 319px;
+}
+
+.description {
+    text-align: center;
+    align-items: center;
+    font-family: Lexend Deca;
+}
+
+.description h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.description p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.all {
+    max-width: 141.82px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.all img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.show {
+    height: 68%;
+}
+
+/* -----------------------collection--------------------- */
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    gap: 20px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.collection_one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection_two {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    height: 52px;
+}
+
+.logos img {
+    max-width: 50px;
+}
+
+.collection_one h2 {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.btn {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.collection_one button:last-child:hover {
+    transition: 0.5s;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.logos p {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.6px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+/* ---------------------gallery-------------- */
+.museum {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.museum img {
+    width: 100%;
+}
+
+/* -----------------------pay---------------------------- */
+
+.pay h3 {
+    font-family: Sofia Sans;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.pay {
+    max-width: 1340px;
+    height: 56.8px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: #E4D7BF;
+    margin-top: 50px;
+}
+
+#paypal {
+    max-width: 6%;
+}
+
+#shoppay {
+    max-width: 6%;
+}
+
+.secret {
+    max-width: 1340px;
+    margin: auto;
+    text-align: center;
+}
+
+.backimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.transparence {
+    background-color: #262626;
+    opacity: 0.5;
+    max-width: 1220px;
+    height: 410px;
+    margin: auto;
+    margin-top: -440px;
+}
+
+.trans {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    max-width: 1220px;
+    margin: auto;
+    margin-top: -385px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.repair {
+    font-family: Lexend Deca;
+    color: #FFFFFF;
+}
+
+.repair h3 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.repair blockquote {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+}
+
+.learn img {
+    max-width: 31.4%;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+#hammer {
+    max-width: 42%;
+}
+
+.secret_res {
+    display: none;
+    text-align: center;
+}
+
+.secret_res h2 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.secret_res blockquote {
+    font-family: Lexend Deca;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.resimg {
+    text-align: center;
+}
+
+.secret_res button {
+    font-family: Sofia Sans;
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 400px;
+    margin: auto;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#child {
+    display: none;
+    margin-top: 20px;
+}
+
+.facebooks {
+    margin-top: 20px;
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonderful Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/body/index.css">
+    <link rel="stylesheet" href="./css/header/introduction.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/animations/animation.css">
+    <link rel="stylesheet" href="./css/responsive/responsive2.css">
+    <link rel="stylesheet" href="./css/responsive/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <div class="top_header">
+                <marquee direction="right">Free Shipping with $125+ Purchase</marquee>
+            </div>
+            <div class="main_header">
+                <div class="logo">
+                    <h4 class="hamburger" onclick="openNav()" id="hamburger">&#9776;</h4>
+                    <img src="./img/header/zoom.png" alt="zoom" class="hamburger">
+                    <img src="./img/header/logo.png" alt="logo" class="logo_img">
+                </div>
+                <div class="menu_bar">
+                    <h4>Women</h4>
+                    <h4>Men</h4>
+                    <h4>Accessories</h4>
+                    <h4>Sale</h4>
+                    <h4>Brands</h4>
+                </div>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Sale</a>
+                    <a href="#">Brands</a>
+                </div>
+                <div class="icon_bar">
+                    <a href="#">
+                        <img src="./img/header/heart.png" alt="heart">
+                    </a>
+                    <a href="#">
+                        <img src="./img/header/zoom.png" alt="zoom" class="icon_hidden">
+                    </a>
+                    <a href="#">
+                        <img src="./img/header/location.png" alt="location" class="icon_hidden">
+                    </a>
+                    <a href="#">
+                        <img src="./img/header/man.png" alt="man" class="icon_hidden">
+                    </a>
+                    <a href="#">
+                        <img src="./img/header/basket.png" alt="basket">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div id="slide" onclick="showFlowerShower()">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/body/slider1/slide.png" alt="slider1" class="normal">
+                        <img src="./img/body/slider1/res.png" alt="res" class="res">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/body/slider1/slide.png" alt="slider1" class="normal">
+                        <img src="./img/body/slider1/res.png" alt="res" class="res">
+                    </div>
+                </div>
+                <div class="shopbtn">
+                    <button>
+                        <img src="./img/body/slider1/link1.png" alt="men" onclick="showFlowerShower()">
+                    </button>
+                    <button>
+                        <img src="./img/body/slider1/link2.png" alt="woman" onclick="showFlowerShower()">
+                    </button>
+                </div>
+                <div class="btns">
+                    <div class="swiper-button-prev">
+                        <img src="./img/body/slider1/left_arrow.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./img/body/slider1/right_arrow.png" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banners">
+            <div class="bannerin">
+                <div class="swiper mySwiperTwo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h3>"The first thing I noticed about these shoes is just how well they're made"- USA Today
+                            </h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>"The second thing is GQ which is the wonderful one in its industry and professional
+                                field."</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>"The third thing is Forbes that we can use everywhere and anytime."</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>"The last thing is WSL whose capability is over our header and shoulder."</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-bar">
+            <button onclick="goToSlide(0)" class="gallery">
+                <img src="./img/body/mark/1.svg" class="usual" alt="GQ">
+            </button>
+            <button onclick="goToSlide(1)" class="gallery">
+                <img src="./img/body/mark/2.svg" class="usual" alt="Forbes">
+            </button>
+            <button onclick="goToSlide(2)" class="gallery">
+                <img src="./img/body/mark/3.svg" class="usual" alt="WSL">
+            </button>
+            <button onclick="goToSlide(3)" class="gallery">
+                <img src="./img/body/mark/4.svg" class="usual" alt="USA">
+            </button>
+        </div>
+        <div class="go_shop">
+            <div class="man_shop">
+                <div>
+                    <img src="./img/body/link/man_shoes.png" alt="man's shoes">
+                    <div class="links">
+                        <h3>men's collection</h3>
+                        <div class="img">
+                            <img src="./img/body/slider1/link2.png" alt="man's shop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="woman_shop">
+                <div>
+                    <img src="./img/body/link/woman_shoes.png" alt="woman's shoes">
+                    <div class="links">
+                        <h3>women's collection</h3>
+                        <div class="img_two">
+                            <img src="./img/body/slider1/link1.png" alt="woman's shop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideTwo">
+            <div class="title">
+                <h2>you might also like</h2>
+            </div>
+            <div class="swiper mySwiperThree">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="shoes">
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/slider2/man.png" alt="man shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Pegasio</h3>
+                                    <p>$549.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/slider2/leather.png" alt="brown shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Peppo</h3>
+                                    <p>$525.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/slider2/black.png" alt="black shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Kristof</h3>
+                                    <p>$489.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/slider2/boot.png" alt="boot" />
+                                </div>
+                                <div class="description">
+                                    <h3>Polonie</h3>
+                                    <p>$449.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shoes">
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/introduction/sandal1.png" alt="man shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Nike</h3>
+                                    <p>$324.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/introduction/sandal2.png" alt="brown shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Sanka</h3>
+                                    <p>$240.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/introduction/sandal3.png" alt="black shoes" />
+                                </div>
+                                <div class="description">
+                                    <h3>Wamou</h3>
+                                    <p>$843.00</p>
+                                </div>
+                            </div>
+                            <div class="second_slide">
+                                <div class="show">
+                                    <img src="./img/body/introduction/sandal2.png" alt="boot" />
+                                </div>
+                                <div class="description">
+                                    <h3>Pegasio</h3>
+                                    <p>$549.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all">
+                    <img src="./img/body/slider2/all.png" alt="show all">
+                </div>
+            </div>
+        </div>
+        <div class="intro_image">
+            <div class="collection">
+                <div class="collection_one">
+                    <h2>collection</h2>
+                    <div>
+                        <button id="btn1" class="btn black">men</button>
+                        <button id="btn2" class="btn white">women</button>
+                    </div>
+                </div>
+                <div class="collection_two">
+                    <div class="logos">
+                        <img src="./img/body/collection/ico.svg.png" alt="logo1">
+                        <p>comfort that last</p>
+                    </div>
+                    <div class="logos" id="logo2">
+                        <img src="./img/body/collection/Layer_1-2.svg fill.png" alt="logo2">
+                        <p>high-quality materials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footwear">
+            <div class="swiper mySwiperFive">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="museum">
+                            <img src="./img/body/collection/slip.png" alt="slip">
+                            <img src="./img/body/collection/sneaker.png" alt="sneaker">
+                            <img src="./img/body/collection/boots.png" alt="boots">
+                            <img src="./img/body/collection/dress.png" alt="dress">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="museum">
+                            <img src="./img/body/collection/slip.png" alt="slip">
+                            <img src="./img/body/collection/sneaker.png" alt="sneaker">
+                            <img src="./img/body/collection/boots.png" alt="boots">
+                            <img src="./img/body/collection/dress.png" alt="dress">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction">
+            <div class="intro_title">
+                <h2>each step unfolds a story</h2>
+            </div>
+            <div class="swiper mySwiperFour">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="products" id="products">
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal1.png" alt="sandal1">
+                                </div>
+                                <div class="content">
+                                    <h4>helen</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal2.png" alt="sandal2">
+                                </div>
+                                <div class="content">
+                                    <h4>halinka</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal1.png" alt="sandal3">
+                                </div>
+                                <div class="content">
+                                    <h4>helen</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="products">
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal1.png" alt="sandal1">
+                                </div>
+                                <div class="content">
+                                    <h4>helen</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal2.png" alt="sandal2">
+                                </div>
+                                <div class="content">
+                                    <h4>halinka</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                            <div class="jane">
+                                <div class="jane_img">
+                                    <img src="./img/body/introduction/sandal1.png" alt="sandal3">
+                                </div>
+                                <div class="content">
+                                    <h4>helen</h4>
+                                    <p><strong>★★★★☆</strong> 4.3(4)</p>
+                                </div>
+                                <div class="describe">
+                                    <p>“Lorem ipsum dolor sit amet consectetur. Sit velit posuere sollicitudin maecenas
+                                        imperdietmi
+                                        porttitor sed id. Elementum sodales etiam.”</p>
+                                </div>
+                                <div>
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addCart">
+            <div class="addCartTitle">
+                <div class="collection_one">
+                    <h2>featured product</h2>
+                    <div class="togglebtns">
+                        <button id="btn1" class="btn black">men</button>
+                        <button id="btn2" class="btn white">women</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <div class="walker">
+                <img src="./img/body/buy/walker1.png" alt="imageone">
+                <img src="./img/body/buy/Walker_2.jpg (1).png" alt="imagetwo">
+            </div>
+            <div class="detail">
+                <div class="buy_logo">
+                    <span>Walker</span>
+                    <img src="./img/header/logo.png" alt="logo">
+                </div>
+                <h4>$299.00</h4>
+                <h5><strong>Shipping</strong> calculated at checkout.</h5>
+                <div class="purple">
+                    <p>4 interest-free installments, or from <strong>$26.99</strong> /mo with</p>
+                </div>
+                <div class="paypal">
+                    <img src="./img/body/buy/pay.png" alt="pay">
+                    <a href="#">Check your purchasing power</a>
+                </div>
+                <div class="blue">
+                    <div class="blue_title">
+                        <h3><strong>color:</strong> dark brown</h3>
+                    </div>
+                    <div class="intro_shoes">
+                        <div class="image-group">
+                            <img src="./img/body/buy/image1.png" alt="shoesone" class="image-toggle active" id="img1">
+                            <img src="./img/body/buy/image2.png" alt="shoestwo" class="image-toggle" id="img2">
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4><strong>men's size: </strong>8</h4>
+                        <div class="chart">
+                            <h5>Size Chart</h5>
+                            <img src="./img/body/buy/chart.png" alt="chart">
+                        </div>
+                    </div>
+                    <div class="buybtn">
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>6.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>7</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>7.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>8</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>8.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>9</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>9.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>10</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>10.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>11</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>11.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/line.png" alt="noline">
+                            <h5>12</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>12.5</h5>
+                        </div>
+                        <div class="button-container">
+                            <img src="./img/body/buy/white.png" alt="line">
+                            <h5>13</h5>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button>add to cart</button>
+                        <img src="./img/body/buy/heart.png" alt="heart">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shoesdetail">
+            <div class="detail_one">
+                <img src="./img/body/shoes describe/Asset_1_5.svg fill.png" alt="banner">
+                <h2>soft-air technology<br> made by mephisto</h2>
+                <h4>Click on one of the information<br> points to learn more about the
+                    <br> <strong>mephisto soft-air technology</strong>
+                </h4>
+            </div>
+            <div>
+                <div class="big_shoes">
+                    <img src="./img/body/shoes describe/big.png" alt="big">
+                </div>
+            </div>
+        </div>
+        <div class="pay">
+            <h3>buy now, pay later</h3>
+            <img src="./img/body/shoes describe/paypal.png" alt="paypal" id="paypal">
+            <img src="./img/body/shoes describe/shoppay.png" alt="shoppay" id="shoppay">
+        </div>
+        <div class="secret">
+            <div class="backimg">
+                <img src="./img/body/pay/back.png" alt="">
+            </div>
+            <div class="transparence"></div>
+            <div class="trans">
+                <div class="repair" id="repairTwo">
+                    <img src="./img/body/pay/leave.svg" alt="leave">
+                    <h3>sustainability</h3>
+                    <blockquote>
+                        Sustainability is at the heart of Mephisto. We create<br>
+                        preminm footwear using eco-friendly materials,<br>
+                        minimizing our impack on the environment while...
+                    </blockquote>
+                    <div class="learn">
+                        <img src="./img/body/pay/more.png" alt="learn">
+                    </div>
+                </div>
+                <div class="repair">
+                    <img src="./img/body/pay/hammer.svg" alt="leave">
+                    <h3>sustainability</h3>
+                    <blockquote>
+                        Sustainability is at the heart of Mephisto. We create<br>
+                        preminm footwear using eco-friendly materials,<br>
+                        minimizing our impack on the environment while...
+                    </blockquote>
+                    <div class="learn">
+                        <img src="./img/body/pay/refurbish.png" alt="learn" id="hammer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secret_res">
+            <div class="resimg">
+                <img src="./img/responsive/ico_1.svg.svg" alt="">
+            </div>
+            <h2>MEPHISTO Refurbishment Service</h2>
+            <blockquote>
+                We specialize in rebuilding your Mephisto<br>
+                shoes and sandals with expert, handcrafted<br>
+                workmanship and worldclass service.
+            </blockquote>
+            <button>REFURBISH MY
+                MEPHISTOS
+                <div class="respo">
+                    <img src="./img/responsive/white-arrow.svg fill.svg" style="padding-left: 10px;" alt=""
+                        class="resimg">
+                </div>
+            </button>
+        </div>
+        <div class="discover">
+            <div class="discover_title">
+                <h4>discover our brands</h4>
+            </div>
+            <div class="swiper mySwiperThree">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imgs">
+                            <img src="./img/body/discover/1.png" alt="">
+                            <img src="./img/body/discover/2.png" alt="">
+                            <img src="./img/body/discover/3.png" alt="">
+                            <img src="./img/body/discover/4.png" alt="">
+                            <img src="./img/body/discover/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgs">
+                            <img src="./img/body/discover/1.png" alt="">
+                            <img src="./img/body/discover/2.png" alt="">
+                            <img src="./img/body/discover/3.png" alt="">
+                            <img src="./img/body/discover/4.png" alt="">
+                            <img src="./img/body/discover/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div>
+            <div class="comfort">
+                <h2>comfort that lasts @mephistousa</h2>
+                <h4>Come get comfortable with us! Join our family and share your Mephisto style with other fans.</h4>
+            </div>
+            <div class="lastest">
+                <div class="lastone">
+                    <div class="last_one">
+                        <div class="service">
+                            <h2>customer service</h2>
+                            <p>Order Status</p>
+                            <p>Contact Us</p>
+                            <p>Shipping and Returns</p>
+                            <p>FAG</p>
+                            <p>Privacy Policy</p>
+                            <p>Terms of Use</p>
+                        </div>
+                        <div class="service">
+                            <h2>about us</h2>
+                            <p>Our Story</p>
+                            <p>Store Locator</p>
+                            <p>Shoe Care + Refurbishment</p>
+                            <p>Affiliate Program</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h2>shoppers with disablities</h2>
+                        <blockquote>
+                            If you are vision-impaired or have any <br>
+                            impairment covered by the Americans with <br>
+                            Disabilities Act or similar law, and you wish <br>
+                            to discuss potential accommodations related <br>
+                            to using this website, please contact us at <br>
+                            <strong>(615) 771-5900</strong> or email us at <br>
+                            <strong>info@mephistosa.com</strong>
+                        </blockquote>
+                        <div class="facebooks">
+                            <img src="./img/footer/facebook.svg" alt="facebook">
+                            <img src="./img/footer/linkin.svg" alt="likedin">
+                            <img src="./img/footer/git.svg" alt="git">
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h2>email sign up</h2>
+                        <h3>Join the Mephisto Family!</h3>
+                        <blockquote>
+                            Sign up today and receive free 3-day <br>
+                            priority shipping on your next order.
+                        </blockquote>
+                        <button>sign up for emails</button>
+                    </div>
+                    <div class="service">
+                        <h2>give the gift of choice</h2>
+                        <img src="./img/footer/prize.svg" alt="prize">
+                        <div>
+                            <img src="./img/responsive/child.svg" alt="" id="child">
+                            <span>@2024 MEPHISTO USA Inc.<br>
+                                -All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lasttwo">
+                    <img src="./img/footer/axem.svg" alt="amex">
+                    <img src="./img/footer/apple.svg" alt="apple">
+                    <img src="./img/footer/normal.svg" alt="moon">
+                    <img src="./img/footer/discover.svg" alt="discover">
+                    <img src="./img/footer/google.svg" alt="google">
+                    <img src="./img/footer/safari.svg" alt="safari">
+                    <img src="./img/footer/normal.svg" alt="normalsp">
+                    <img src="./img/footer/shop.svg" alt="credit">
+                    <img src="./img/footer/visa.svg" alt="visa">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

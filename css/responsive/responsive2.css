@@ -1,0 +1,323 @@
+@media screen and (max-width:1316px) {
+    .collection_two {
+        transition: 0.5s;
+        margin-left: 50px;
+    }
+
+    .collection {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1111px) {
+    .collection {
+        flex-direction: column;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .collection_one {
+        order: 1;
+    }
+
+    .collection_one {
+        max-width: 800px;
+        margin: auto;
+        gap: 60px;
+    }
+
+    .collection_two {
+        max-width: 800px;
+        margin: auto;
+        gap: 60px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .logos {
+        flex-direction: column;
+    }
+
+    #logo2 {
+        width: 40%;
+    }
+
+    #logo2 img {
+        max-width: 45px;
+    }
+
+    .collection {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:529px) {
+    .collection_one {
+        gap: 10px;
+    }
+
+    .logos p {
+        font-size: 12px;
+    }
+
+    .collection_one h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:494px) {
+    .collection_two {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:452px) {
+    .btn {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .collection {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    #btn2 {
+        margin-left: 5px;
+    }
+}
+
+/* -----------------------------slider Four-------------------------- */
+
+@media screen and (max-width:1021px) {
+    #products {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:466px) {
+    .intro_title h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .intro_title {
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width:1372px) {
+    .buy {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .walker {
+        width: 100%;
+    }
+
+    .walker img {
+        max-width: 50%;
+    }
+
+    .buy_logo img {
+        display: none;
+    }
+
+    .detail {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .addCartTitle {
+        padding: 0;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .collection_one {
+        padding: 0px 20px;
+        gap: 0px;
+    }
+
+    .togglebtns {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .detail {
+        padding: 0px 50px;
+    }
+
+    .buy {
+        gap: 30px;
+    }
+
+    .buy_logo span {
+        font-size: 16px;
+    }
+
+    .paypal img {
+        max-width: 25%;
+    }
+
+    .cart button {
+        font-size: 18px;
+    }
+}
+
+/* ---------------------detail----------------------------- */
+@media screen and (max-width:1380px) {
+    .shoesdetail {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .shoesdetail {
+        grid-template-columns: auto;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .shoesdetail {
+        display: none;
+    }
+}
+
+/* ---------------------pay-------------------------------- */
+
+@media screen and (max-width:700px) {
+    #paypal {
+        max-width: 13%;
+    }
+
+    #shoppay {
+        max-width: 13%;
+    }
+}
+
+
+/* ------------------discover----------------------------- */
+@media screen and (max-width:1250px) {
+    .transparence {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .trans {
+        margin-top: -364px;
+    }
+
+    .repair {
+        height: 101px;
+    }
+
+    .repair img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .secret {
+        transition: 0.5s;
+        display: none;
+    }
+
+    .secret_res {
+        transition: 0.5s;
+        display: block;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .discover_title h4 {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .discover_title {
+        text-align: start;
+    }
+
+    .lastest {
+        padding: 64px 40px;
+        margin: 0px;
+    }
+
+    .lastone {
+        gap: 0px;
+    }
+
+    .secret_res {
+        max-width: 100%;
+        margin: auto
+    }
+
+    .secret_res button {
+        max-width: 350px;
+    }
+}
+
+/* ------------------last---------------- */
+@media screen and (max-width:1350px) {
+    .lastone {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .lastone {
+        grid-template-columns: auto auto;
+    }
+
+    .lasttwo {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .lastone {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:455px) {
+    #child {
+        display: block;
+    }
+
+    .lastest {
+        padding: 64px;
+    }
+
+    .comfort h2 {
+        font-size: 20px;
+    }
+
+    .comfort h4 {
+        font-size: 12px;
+    }
+
+    .comfort {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .imgs {
+        margin-left: 0px;
+        gap: 0px;
+    }
+}
