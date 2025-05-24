@@ -1,89 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>New Project</title>
   <style>
-
-    body {
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-      background: #f2f2f2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    html {
+      background-color: rosybrown;
+      background-image: url(stock-photo-portrait-of-young-emotive-girl-posing-in-d-glasses-with-popcorn-basket-over-pink-background-in-2248934007.jpg);
+      font-family: Arial, Helvetica, sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
-    .dropdown {
-      position: relative;
-      display: inline-block;
+    p {
+      font-size: medium;
     }
 
-    .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: background 0.2s ease;
+    h1 {
+      text-shadow: 3px 3px rgb(243, 31, 31);
     }
 
-    .dropbtn:hover {
-      background-color: #45a049;
+    main {
+      background-color: azure;
+      background-image: url(ChatGPT\ Image\ May\ 24\,\ 2025\,\ 01_08_48\ AM.png);
+      border: 1px solid red;
+      width: 60%;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 15px;
     }
 
-    .dropdown-content {
-      position: absolute;
-      top: 110%;
-      left: 0;
-      background-color: white;
-      min-width: 200px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      border-radius: 3px;
-      overflow: hidden;
-      opacity: 0;
-      transform: translateY(10px);
-      pointer-events: none;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      z-index: 1000;
-    }
-
-    .dropdown:hover .dropdown-content {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-
-    .dropdown-content a {
-      color: #333;
-      padding: 12px 20px;
-      text-decoration: none;
+    img {
+      margin: 20px auto;
+      border-radius: 10px;
       display: block;
-      transition: background 0.3s ease;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
     }
 
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
+    li {
+      line-height: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th {
+      background-color: rgba(242, 242, 242, 0.411);
+    }
+
+    th,
+    tr {
+      padding: 10px;
+      text-align: left;
+      border-width: 1px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    #name {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    #fav_game {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    #send {
+      background-color: rgb(238, 24, 174);
+      border-radius: 15px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    #send button:hover {
+      color: purple;
+    }
+
+    footer p {
+      font-style: italic;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="dropdown">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favourite thing website</title>
+    <meta name="description" content="my favourite thing">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    <button class="dropbtn">Menu ▼</button>
+  <body>
+    <main>
+      <h1>My Favourite Things</h1>
+      <section>
+        <h2>🎬 Favorite Movie</h2>
+        <p>I really enjoy watching Spider-Man: No Way Home because of its action and storyline.</p>
+        <div class="image_01">
+          <img src="https://i.pinimg.com/736x/c5/ff/a3/c5ffa3a634b1aadf515a052a2b80fd88.jpg" alt="spider_man poster">
+        </div>
+      </section>
+      <section>
+        <h2>🍕 Favorite Food</h2>
+        <ul>
+          <li>Pizza</li>
+          <li>Jollof Rice</li>
+          <li>Chicken Suya</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🎮 Favorite Games</h2>
+        <table border="1">
+          <tr>
+            <th>Game</th>
+            <th>Genre</th>
+            <th>Platform</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>Fortnite</td>
+              <td>Battle Royale</td>
+              <td>pc</td>
+            </tr>
+            <tr>
+              <td>Blox fruit</td>
+              <td>Adventure</td>
+              <td>Roblox</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <form action="submit">
+        <h2>💬 Share Your Favorites</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="fav_game">Your Favourite Game:</label><br>
+        <input type="text" id="fav_game" name="fav_game"><br><br>
+        <textarea rows="10" cols="24" placeholder="Tell me why you love it..."></textarea><br>
+        <button id="send" type="submit">Send</button>
 
-    <div class="dropdown-content">
-      <a href="#">🌟 Home</a>
-      <a href="#">📁 Portfolio</a>
-      <a href="#">📞 Contact</a>
-      <a href="#">⚙️ Settings</a>
-    </div>
-
-  </div>
+      </form>
+      <footer>
+        <p>&copy isaac obi.2025 html and css </p>
+      </footer>
+    </main>
+  </body>
 
 </body>
+
 </html>
