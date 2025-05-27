@@ -167,3 +167,28 @@ class Maggotchi:
     self.ImmuneEvasion += event[1]
     self.FeedingMechanism += event[2]
     self.ReproductiveOutput += event[3]
+
+    #Password Generator Project
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to the PyPassword Generator!")
+nr_letters= int(input("How many letters would you like in your password?\n")) 
+#nr_symbols = int(input(f"How many symbols would you like?\n"))
+#nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+sublist_letter = letters[0:52]
+sublist_num = numbers[0:10]
+sublist_sym = symbols[0:9]
+
+let_count = 0
+rand_letter = ""
+for letc in letters:
+    rand_letter += random.choice(sublist_letter)
+    let_count += 1
+    if let_count > nr_letters:
+        break
+
+print(rand_letter)
