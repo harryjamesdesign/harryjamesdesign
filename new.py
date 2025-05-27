@@ -120,3 +120,50 @@ def main():
 
 if __name__ == "__main__":
   main()
+
+  from random import choice, random
+EVENTS = [
+    ("The parasite begins to supress the host's immune system. You get the syringe.",
+      0, 10, 0),
+    ("The parasite begins to obtain nutrients from the host. You can feel the teeth.",
+      -10, 0, 0),
+    ("The parasite bore offspring. You manage to cook most of it.", 0, -10,
+      0),
+    ("The parasite inhaled the toxins and lost energy. You sigh in ease.", 0,
+      0, -10)
+]
+
+class Maggotchi:
+
+  def __init__(self, name):
+    self.name = name
+    self.ImmuneEvasion = 50
+    self.FeedingMechanism = 50
+    self.ReproductiveOutput = 50
+
+  def sicken(self):
+    self.ImmuneEvasion -= 10
+    self.FeedingMechanism += 5
+    print(f"{self.name} has been sickened. That doesn't stop hunger.")
+
+  def fendoff(self):
+    self.FeedingMechanism += 10
+    self.ReproductiveOutput -= 10
+    print(f"{self.name} feeds on you. You fend it off.")
+
+  def adaption(self):
+    self.ReproductiveOutput += 10
+    self.FeedingMechanism += 5
+    print(f"{self.name} is adapted to it's new environment. It's reproducing.")
+
+  def status(self):
+    print(f"{self.name}'s Status - ImmuneEvasion: {self.ImmuneEvasion}")
+    print(f"FeedingMechanism: {self.FeedingMechanism}")
+    print(f"ReproductiveOutput: {self.ReproductiveOutput}")
+  
+  def random_event(self):
+    event = choice(EVENTS)
+    print(f"{self.name} {event[0]}")
+    self.ImmuneEvasion += event[1]
+    self.FeedingMechanism += event[2]
+    self.ReproductiveOutput += event[3]
