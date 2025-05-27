@@ -201,3 +201,13 @@ elif a == b:
   print("a and b are equal")
 else:
   print("b is less than a")
+
+  class TicketCategory(discord.ui.Select):
+    def __init__(self, bot):
+        with open('Configurations/TicketModule.json', encoding='utf-8-sig') as f:
+            data = json.load(f)
+        options = []
+        for category, details in data['TICKET_CATEGORIES'].items():
+            emoji = details['Emoji'] # Right here
+            options.append(SelectOption(label=category, value=category, emoji=emoji))
+        super().__init__(placeholder="Select a ticket category...", min_values=1, max_values=1, options=options)
