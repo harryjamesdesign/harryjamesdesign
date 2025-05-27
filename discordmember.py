@@ -22,3 +22,23 @@ class Kick(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Kick(bot))
+
+
+    bot = discord.Bot()
+
+@bot.command(name="kick", description="Kicks a member from the server.")
+async def kick(self, ctx, member: Member, reason: str = None):
+    # Kick the member
+    await member.kick(reason=reason)
+
+    # Load the JSON data from the file
+    with open('Configurations/General.json') as f:
+        data = json.load(f)
+
+    # Get the system log channel ID from the JSON data
+    channel_id = data.get('system_log_channel')
+
+    # Create and send the embed
+    await create_embed(bot, channel_id, 'success', f'Kicked {member.name}', reason or 'No reason provided')
+
+bot.run("TOKEN")
