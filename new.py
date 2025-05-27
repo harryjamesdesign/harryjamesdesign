@@ -70,3 +70,53 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit, QLineEdit, QPu
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QPixmap, QIcon, QFont
 import google.generativeai as genai
+
+# Step 2: Main Game Loop.
+def main():
+  pet_name = input("Name your Maggotchi:")
+  pet = Maggotchi(pet_name)
+
+  while True:
+      pet.status()
+      print("\nIt still is breathing. What will you do?")
+      print("1. Sicken it.")
+      print("2. Fend it off.")
+      print("3. Sense danger.")
+      print("4. Quit.")
+
+      choice = input("Enter your choice (1-4): ")
+
+      if choice == "1":
+        pet.sicken()
+      elif choice == "2":
+        pet.fendoff()
+      elif choice == "3":
+        pet.sensedanger()
+      elif choice == "4":
+        print(f"Goodbye, {pet.name}...!")
+        break
+      else:
+        print("Invalid choice. Please try again.")
+
+    # Ensure attributes stay within bounds.
+      pet.ImmuneEvasion = max(0, min(100, pet.ImmuneEvasion))
+      pet.FeedingMechanism = max(0, min(100, pet.FeedingMechanism))
+      pet.ReproductiveOutput = max(0, min(100, pet.ReproductiveOutput))
+
+      # Introduce random events occasionally
+      if random() < 0.3:  # 30% chance of a random event occurring
+        pet.random_event()
+
+        # Check pet's well-being
+      if pet.hunger >= 100:
+        print(f"{pet.name} survived, the poison didn't do the trick! Game over.")
+        break
+      if pet.happiness <= 0:
+        print(f"{pet.name} ate, the artery has been torn! Game over.")
+        break
+      if pet.energy <= 0:
+        print(f"{pet.name} bore, the offspring escaped the bunker! Game over.")
+        break
+
+if __name__ == "__main__":
+  main()
