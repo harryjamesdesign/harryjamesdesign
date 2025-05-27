@@ -1,0 +1,33 @@
+{
+    "TICKET_CATEGORIES": {
+        "General Help": {
+            "Emoji": ":raised_hand:"
+        },
+        "Giveaway Redemption": {
+            "Emoji": ":gift:"
+        },
+        "Partnership Help": {
+            "Emoji": ":handshake:"
+        }
+    },
+    "TICKET_MESSAGE": {
+        "EMBED": {
+            "AUTHOR": {
+                "TEXT": "Author Text goes here",
+                "URL": "https://google.com",
+                "ICON_URL": "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/image8-2.jpg?width=893&height=600&name=image8-2.jpg"
+            },
+            "BODY": {
+                "TITLE": "Body Title goes here",
+                "DESCRIPTION": "Body Description goes here",
+                "URL": "https://google.com",
+                "COLOR": "#58b9ff",
+                "FIELD_1": {
+                    "NAME": "Field Name goes here",
+                    "FIELD_VALUE": "Field Value goes here",
+                    "IN_LINE?": "True"
+                }
+            }
+        }
+    }
+}
