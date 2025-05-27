@@ -1,0 +1,186 @@
+html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: linear-gradient(120deg, #000000 0%, #1f0022 100%);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      color: white;
+      z-index: 10;
+      pointer-events: none;
+      text-shadow: 0 0 10px rgba(255, 0, 102, 0.8);
+    }
+
+    .top-left {
+      top: 20px;
+      left: 30px;
+      font-size: 2.8em;
+      font-weight: bold;
+      animation: glowText 3s ease-in-out infinite alternate;
+    }
+
+    .bottom-left {
+      bottom: 20px;
+      left: 30px;
+      font-size: 1.4em;
+    }
+
+    .center-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      font-size: 2em;
+      text-shadow: 0 0 15px #ff00cc;
+      animation: fadeInUp 3s ease forwards;
+      opacity: 0;
+    }
+
+    .nav-bar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 11;
+      display: flex;
+      gap: 20px;
+      font-size: 1.2em;
+      pointer-events: auto;
+    }
+
+    .nav-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .nav-bar a:hover,
+    .nav-bar a:focus {
+      color: #ff66cc;
+      transform: scale(1.2);
+    }
+
+    .nav-bar a:active {
+      animation: pulse 0.6s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.4);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes glowText {
+      from {
+        text-shadow: 0 0 10px #ff0051, 0 0 20px #ff3377, 0 0 30px #ff6699;
+      }
+
+      to {
+        text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff3399, 0 0 40px #ff0077;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translate(-50%, 20%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+
+    .typing {
+      border-right: 2px solid #ff66cc;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+/* Hi there!
+
+Did go through your job description and glad to share that I have experience in working with OpenCart and API integration platform.
+I have more than ten years of industry experience and have been the part of diverse industry verticals.
+
+I also have expertise with ReactJs,VueJs, Laravel, Magento, WordPress, PHP, API's development & Integration and CodeIgnitor along with XD and Figma. So can help you with the design as well.
+
+
+Looking forward to your response. */
+
+/* Shopify Dropshipping
+------------
+
+Hi there,
+
+I've gone through your detailed job description and I understand your requirements.
+
+I am expert in Shopify website development and can help you in fully functional online store building.
+
+I will build a Responsive E-commerce website.
+
+I've all the skills required for this job like..
+
+- Shopify
+- SEO
+- Web Design
+- Website Development
+
+
+I will give you:
+
+- Professional and Creative Designs as Per Your Needs (Shopify theme customization)
+- Fully functional e-commerce website
+- Advanced search functionality with filters
+- SEO optimization
+- Graphics- banners, logo etc
+- Secure payment gateways
+- Coupons/ discounts
+- Newsletter/ subscription function.
+- Continued to Follow Up Support After the Project is Finished
+
+---
+Kindly have a look at my work portfolio.
+
+Shopify:work sample
+https://youngblok.com/
+https://asthetika.in/
+https://www.levantinebags.com/
+https://gunsthighs.com/
+https://sahajherbals.com/
+https://bobooils.com.au/
+https://yorkshireatv.com/
+https://balloonsonthego.com/
+https://www.delight.com.sg/
+https://chandanni.com/
+
+
+
+--
+Other Skills
+PHP, HTML, CSS, PHP CMS, WordPress, shopify-Ecommerce, Jquery, My sql
++ SEO
+
+
+We can discuss in more detail via private chat.
+Look forward to hearing back from you, hope we can work together.
+
+Thanks!
+Kindest regards, */

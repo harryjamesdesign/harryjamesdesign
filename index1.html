@@ -2,163 +2,216 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>New Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fancy Registration</title>
   <style>
-    html {
-      background-color: rosybrown;
-      background-image: url(stock-photo-portrait-of-young-emotive-girl-posing-in-d-glasses-with-popcorn-basket-over-pink-background-in-2248934007.jpg);
-      font-family: Arial, Helvetica, sans-serif;
-      background-repeat: no-repeat;
-      background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    p {
-      font-size: medium;
-    }
-
-    h1 {
-      text-shadow: 3px 3px rgb(243, 31, 31);
-    }
-
-    main {
-      background-color: azure;
-      background-image: url(ChatGPT\ Image\ May\ 24\,\ 2025\,\ 01_08_48\ AM.png);
-      border: 1px solid red;
-      width: 60%;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 15px;
-    }
-
-    img {
-      margin: 20px auto;
-      border-radius: 10px;
-      display: block;
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle, #1b1b2f 0%, #162447 100%);
       height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .register-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      padding: 40px;
+      border-radius: 20px;
+      width: 360px;
+      box-shadow: 0 0 20px #0f3460;
+      animation: floatUp 1s ease forwards;
+    }
+
+    .register-box h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 25px;
+      animation: fadeSlide 0.6s ease forwards;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 25px;
+      animation: fadeSlide 0.5s ease forwards;
+    }
+
+    .input-group input {
       width: 100%;
-      max-width: 400px;
-    }
-
-    li {
-      line-height: 20px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th {
-      background-color: rgba(242, 242, 242, 0.411);
-    }
-
-    th,
-    tr {
-      padding: 10px;
-      text-align: left;
-      border-width: 1px;
-    }
-
-    textarea {
-      width: 100%;
-    }
-
-    #name {
-      width: 100%;
-      padding: 10px;
+      padding: 14px 12px;
+      background: transparent;
+      border: 2px solid #ffffff50;
       border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s;
     }
 
-    #fav_game {
+    .input-group label {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      color: #aaa;
+      pointer-events: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus,
+    .input-group input:not(:placeholder-shown) {
+      border-color: #0f0fff;
+    }
+
+    .input-group input:focus+label,
+    .input-group input:not(:placeholder-shown)+label {
+      top: -10px;
+      left: 10px;
+      font-size: 12px;
+      color: #0f0fff;
+      background-color: #1b1b2f;
+      padding: 0 4px;
+    }
+
+    .btn {
       width: 100%;
-      padding: 10px;
+      padding: 14px;
+      font-size: 16px;
+      background: linear-gradient(90deg, #6c63ff, #00bcd4);
+      border: none;
       border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 20px #6c63ff70;
+      transition: 0.4s;
+      animation: fadeSlide 0.8s ease forwards;
     }
 
-    #send {
-      background-color: rgb(238, 24, 174);
-      border-radius: 15px;
-      width: 100%;
-      padding: 10px;
+    .btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #00bcd4aa;
     }
 
-    #send button:hover {
-      color: purple;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
-    footer p {
-      font-style: italic;
+    @keyframes floatUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-5px);
+      }
+
+      50% {
+        transform: translateX(5px);
+      }
+
+      75% {
+        transform: translateX(-5px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .error input {
+      border-color: #ff1744;
+      animation: shake 0.3s;
+    }
+
+    .error label {
+      color: #ff1744;
     }
   </style>
 </head>
 
 <body>
+  <div class="register-box">
+    <h2>Register Now</h2>
+    <form id="regForm">
+      <div class="input-group">
+        <input type="text" id="name" required placeholder=" " />
+        <label for="name">Full Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" required placeholder=" " />
+        <label for="email">Email</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="pass" required placeholder=" " />
+        <label for="pass">Password</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="confirm" required placeholder=" " />
+        <label for="confirm">Confirm Password</label>
+      </div>
+      <button type="submit" class="btn">Create Account</button>
+    </form>
+  </div>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My favourite thing website</title>
-    <meta name="description" content="my favourite thing">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-
-  <body>
-    <main>
-      <h1>My Favourite Things</h1>
-      <section>
-        <h2>🎬 Favorite Movie</h2>
-        <p>I really enjoy watching Spider-Man: No Way Home because of its action and storyline.</p>
-        <div class="image_01">
-          <img src="https://i.pinimg.com/736x/c5/ff/a3/c5ffa3a634b1aadf515a052a2b80fd88.jpg" alt="spider_man poster">
-        </div>
-      </section>
-      <section>
-        <h2>🍕 Favorite Food</h2>
-        <ul>
-          <li>Pizza</li>
-          <li>Jollof Rice</li>
-          <li>Chicken Suya</li>
-        </ul>
-      </section>
-      <section>
-        <h2>🎮 Favorite Games</h2>
-        <table border="1">
-          <tr>
-            <th>Game</th>
-            <th>Genre</th>
-            <th>Platform</th>
-          </tr>
-          <tbody>
-            <tr>
-              <td>Fortnite</td>
-              <td>Battle Royale</td>
-              <td>pc</td>
-            </tr>
-            <tr>
-              <td>Blox fruit</td>
-              <td>Adventure</td>
-              <td>Roblox</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <form action="submit">
-        <h2>💬 Share Your Favorites</h2>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="fav_game">Your Favourite Game:</label><br>
-        <input type="text" id="fav_game" name="fav_game"><br><br>
-        <textarea rows="10" cols="24" placeholder="Tell me why you love it..."></textarea><br>
-        <button id="send" type="submit">Send</button>
-
-      </form>
-      <footer>
-        <p>&copy isaac obi.2025 html and css </p>
-      </footer>
-    </main>
-  </body>
-
+  <script>
+    const form = document.getElementById('regForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const pass = document.getElementById('pass');
+      const confirm = document.getElementById('confirm');
+      if (pass.value !== confirm.value) {
+        [pass, confirm].forEach(input => {
+          input.parentElement.classList.add('error');
+          setTimeout(() => input.parentElement.classList.remove('error'), 500);
+        });
+      } else {
+        alert('Registered successfully!');
+      }
+    });
+  </script>
 </body>
 
 </html>
