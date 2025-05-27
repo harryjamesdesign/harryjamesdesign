@@ -57,3 +57,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    import pyautogui
+
+# Press a key
+pyautogui.press('space')  # Press the spacebar
+
+# Type a string
