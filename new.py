@@ -64,3 +64,9 @@ if __name__ == "__main__":
 pyautogui.press('space')  # Press the spacebar
 
 # Type a string
+
+import sys
+from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QWidget, QLabel
+from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtGui import QPixmap, QIcon, QFont
+import google.generativeai as genai
