@@ -211,3 +211,13 @@ else:
             emoji = details['Emoji'] # Right here
             options.append(SelectOption(label=category, value=category, emoji=emoji))
         super().__init__(placeholder="Select a ticket category...", min_values=1, max_values=1, options=options)
+
+class TicketCategory(discord.ui.Select):
+    def __init__(self, bot):
+        with open('Configurations/TicketModule.json', encoding='utf-8-sig') as f:
+            data = json.load(f)
+        options = []
+        for category, details in data['TICKET_CATEGORIES'].items():
+            emoji = discord.utils.get(bot.emojis, name=details['Emoji']) # The emoji gets imported from the json file which is sent in the option
+            options.append(SelectOption(label=category, value=category, emoji=emoji))
+        super().__init__(placeholder="Select a ticket category...", min_values=1, max_values=1, options=options)
